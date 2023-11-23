@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form 2</title>
+  </head>
+  <body>
+    <h1 align="center">Registration Form</h1>
+    <form>
+      <fieldset>
+        <legend>Student Details</legend>
+        <label for="name">Student Name:</label>
+        <input type="text" name="Username" id="name" />
+        <br />
+        <br />
+        <label for="pswd">Password:</label>
+        <input type="password" name="pswd" id="pswd" />
+        <br />
+        <br />
+        <label for="email">email:</label>
+        <input type="email" name="Usermail" id="email" />
+        <br />
+        <br />
+        <label for="phone">Mobile Number:</label>
+        <input type="tel" name="phone" id="phone" placeholder="love you( ' - ' )" pattern="[789][0-9]{9}"/><br />
+        <br />
+        <label for="bday">Date of Birth:</label>
+        <input type="date" name="bday" id="bday" /><br />
+        <br />
+        <label for="gender">Gender:</label>
+        <br />
+        <!-- &nbsp;&nbsp; -->
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" />
+        <br />
+        <!-- &nbsp;&nbsp; -->
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" />
+        <br />
+        <!-- &nbsp;&nbsp;  -->
+        <label for="other">Other</label>
+        <input type="radio" id="other" name="gender" />
+        <br /><br />
+        <label for="subject">Subjects:</label>
+        <label for="phy">Physics</label>
+        <input type="checkbox" name="physics" id="phy" />
+        &nbsp;
+
+        <label for="che">Chemistry</label>
+        <input type="checkbox" name="physics" id="che" />
+        &nbsp;
+
+        <label for="mat">Maths</label>
+        <input type="checkbox" name="Maths" id="mat" />
+        &nbsp;
+
+        <label for="cs">Computer Science</label>
+        <input type="checkbox" name="cs" id="cs" />
+        <br /><br />
+        Select City:
+        <select>
+          <option value="">Dehradun</option>
+          <option value="">Rishikesh</option>
+          <option value="">Haridwar</option>
+          <option value="">Jolly Grant</option>
+          <option value="">My House(ragini)</option>
+          <option value="">delhi</option>
+        </select>
+        <br /><br />
+        <label for="comments">Comments:</label>
+        <textarea
+          name=""
+          id="comments"
+          cols="30"
+          rows="10"
+          name="usercomments"
+        ></textarea>
+        <br />
+        <br />
+        <label for="picture">Insert a picture</label>
+        <input type="file" name="picture" accept="image/*" capture="user" />
+        <br />
+        <br />
+        <label for="dclr">Declaration</label><br />
+        <input type="checkbox" name="dclr" id="dclr" />
+        <label for="dclr">
+            <p>I hereby declare that all the given facts are true and correct to best of my knowledge.</p>
+        </label>
+        <input type="reset" value="Reset" />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
